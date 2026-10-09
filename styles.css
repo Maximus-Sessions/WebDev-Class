@@ -1,0 +1,35 @@
+/* 1. Page Background & Font Family */
+body {
+  background-color: #e0f2fe;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #0f172a;
+}
+
+/* 2. Main Title Styling & Centering */
+h1 {
+  color: #0284c7;
+  text-align: center;
+}
+
+h2 {
+  color: #c802c5;
+  text-align: left;
+}
+
+/* 3. Image Sizing & Rounded Corners */
+img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 15px solid #000000;
+}
+
+/* 4. Styled Card/Box Section */
+.info-box {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 50px;
+}
