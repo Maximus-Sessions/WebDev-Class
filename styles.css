@@ -41,3 +41,15 @@ nav {
   gap: 20px;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #888;
+}
+
+/*
+.calculator-box {
+  display: flex;
+  gap: 1rem; /* optional space between them
+}
+
