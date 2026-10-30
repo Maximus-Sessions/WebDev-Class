@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rafting Trips & Packages</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- 1. Navigation Menu -->
+    <nav>
+      <a href="index.html">Home</a> | 
+      <a href="trips.html">Trips & Pricing</a>
+    </nav>
+
+    <!-- 2. Page Content -->
+    <h1>Our Rafting Adventures</h1>
+    <p>Explore our available trips and pick your adventure!</p>
+
+<div class="calculator-box">
+  <h3>Quick Cost Estimator For Package A - Family Trip "Day Trip"</h3>
+  <label for="guestsFullDay">Number of Rafters ($60 Per Group of 6):</label>
+  <input type="number" id="guestsFullDay" value="1" min="1">
+  <button id="calcBtnFullDay">Calculate Total</button>
+  <h4 id="resultTextFullDay">Total: $10</h4>
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="calculator-box">
+  <h3>Quick Cost Estimator For Package B - "Half-Day Trip"</h3>
+  <label for="guestsHalfDay">Number of Rafters ($5 Per Person):</label>
+  <input type="number" id="guestsHalfDay" value="1" min="1">
+  <button id="calcBtnHalfDay">Calculate Total</button>
+  <h4 id="resultTextHalfDay">Total: $5</h4>
+</div>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
