@@ -1,0 +1,63 @@
+
+function getComputerChoice() {
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
+
+    switch (randomNumber) {
+        case 1:
+            return "rock";
+        case 2:
+            return "paper";
+        case 3:
+            return "scissors";
+    }
+}
+
+let playerChoice = prompt("Type rock, paper, or scissors:").toLowerCase();
+
+
+let computerChoice = getComputerChoice();
+
+console.log("Player: " + playerChoice + " | Computer: " + computerChoice);
+
+
+function playRound(player, computer) {
+
+    
+    if (player === computer) {
+        return "It's a tie!";
+    }
+
+    switch (player) {
+        case "rock":
+            if (computer === "scissors") {
+                return "You win! Rock beats scissors.";
+            } else if (computer === "paper") {
+                return "You lose! Paper beats rock.";
+            }
+            break;
+
+        case "paper":
+            if (computer === "rock") {
+                return "You win! Paper beats rock.";
+            } else if (computer === "scissors") {
+                return "You lose! Scissors beats paper.";
+            }
+            break;
+
+        case "scissors":
+            if (computer === "paper") {
+                return "You win! Scissors beats paper.";
+            } else if (computer === "rock") {
+                return "You lose! Rock beats scissors.";
+            }
+            break;
+
+        default:
+            return "Invalid move! Please type rock, paper, or scissors.";
+    }
+}
+
+
+let result = playRound(playerChoice, computerChoice);
+
+alert(result);
