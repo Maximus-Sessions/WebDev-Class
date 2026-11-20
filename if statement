@@ -1,0 +1,8 @@
+let age = Number(prompt("How old are you?"))
+if (age >= 13) {
+    alert("Welcome! You meet the age requirement.");
+    console.log("ACCESS GRANTED");
+} else {
+    alert("Access denied: You must be at least 13 years old to enter.");
+}
+
